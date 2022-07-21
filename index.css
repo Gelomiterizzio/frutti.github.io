@@ -3,6 +3,7 @@
     height: auto;
     margin: 0;
     color: #F8FAFC;
+    font-family: 'Alegreya', serif;
 }
 #header {
     width: 100%;
@@ -26,9 +27,12 @@
     margin-right: 30%;
     padding-left: 3%;
     padding-right: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     background-color: #FF822C;
+    text-align: center;
+    font-size: 20px;
+    border:1.5px solid #111827;
 }
 #introduction {
     width: 100%;
@@ -50,9 +54,36 @@
 }
 .products {
     background-color: #D7A449;
+    width: 100%;
 }
 .click-here {
     background-color: #FF822C;
+    color: black;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.click-div {
+    background-color: #FF822C;
+    
+    width: auto;
+    height: auto;
+    margin: 0 30% 5% 30%;
+    text-align: center;
+}
+#email {
+    width: auto;
+    height: auto;
+}
+#email-form {
+    width: auto;
+    height: auto;
+    margin-top: 7%;
+    margin-right: 22%;
+    margin-left: 25%;
+}
+#textarea-email, #textarea-submit {
+    padding: 1.7% 10%;
 }
 #shops {
     background-color: #111827;
@@ -75,4 +106,21 @@
     margin-bottom: 0;
     text-decoration: none;
     list-style: none;
+}
+nav {
+    display: block;
+    padding-top: 20px;
+}
+nav > ul {
+    display: flex;
+    width: 40vw;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+#logo {
+    width: 40vw;
+    height: 10vh;
+    padding-top: 15px;
+    padding-left: 15px;
 }
