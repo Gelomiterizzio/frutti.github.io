@@ -85,7 +85,7 @@
 #textarea-email, #textarea-submit {
     padding: 1.7% 10%;
 }
-#shops {
+#shops_section {
     background-color: #111827;
     color: #F8FAFC;
 }
@@ -123,4 +123,24 @@ nav > ul {
     height: 10vh;
     padding-top: 15px;
     padding-left: 15px;
+}
+#shops_section {
+    width: 100%;
+    height: auto;
+    padding-top: 9vh;
+    padding-bottom: 9vh;
+}
+#shops_container {
+    border: 2px solid black;
+    height: auto;
+    
+}
+#shops_container, #city_selection, #city_image {
+    background-color: #B5BBC7;
+    height: auto;
+    margin: 0 10%;
+   
+}
+#shops_container > p, #city_selection > p {
+    margin: 0;
 }
