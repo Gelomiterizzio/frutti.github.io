@@ -57,18 +57,35 @@
     width: 100%;
 }
 .click-here {
-    background-color: #FF822C;
-    color: black;
+    background-color: #444;
+    color: #fff;
     width: auto;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
+    
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+.click-here:hover {
+    letter-spacing: 0.25em;
+    background-color: #6eff3e;
+    box-shadow: 0 0 35px #6eff3e;
+}
+.click-here:before {
+    content: "";
+    position: absolute;
+    inset: 2;
+    background: #27282c;
 }
 .click-div {
-    background-color: #FF822C;
+    
     
     width: auto;
     height: auto;
-    margin: 0 30% 5% 30%;
+    
     text-align: center;
 }
 #email {
