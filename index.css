@@ -58,12 +58,13 @@
 }
 .click-here {
     background-color: #444;
+    position: relative;
     color: #fff;
     width: auto;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    
+    margin: 0 10% 0 22%;
     letter-spacing: 0.1em;
     font-weight: 400;
     padding: 10px 30px;
@@ -71,22 +72,59 @@
 }
 .click-here:hover {
     letter-spacing: 0.25em;
-    background-color: #6eff3e;
+    background: #6eff3e;
     box-shadow: 0 0 35px #6eff3e;
+    color: #6eff3e;
 }
-.click-here:before {
-    content: "";
+.click-here::before {
+    content: '';
     position: absolute;
-    inset: 2;
-    background: #27282c;
+    inset: 2px;
+    background: #27282C;
 }
-.click-div {
-    
-    
-    width: auto;
-    height: auto;
-    
-    text-align: center;
+.click-here span {
+    position: relative;
+    z-index: 1;
+}
+.click-here i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.click-here i::before{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #27282C;
+    border: 2px solid #6eff3e;
+    transition: 0.5s;
+}
+.click-here:hover i::before {
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 40px 40px #6eff3e;
+}
+
+.click-here i::after{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #27282C;
+    border: 2px solid #6eff3e;
+    transition: 0.5s;
+}
+.click-here:hover i::after {
+    left: 100%;
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 38px -39px #6eff3e;
 }
 #email {
     width: auto;
