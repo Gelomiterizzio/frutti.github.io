@@ -1,3 +1,23 @@
+#body {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    color: #F8FAFC;
+    font-family: 'Alegreya', serif;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url(https://images.freeimages.com/images/large-previews/4ff/chicago-city-1171976.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .click-here {
     background-color: #444;
     position: relative;
