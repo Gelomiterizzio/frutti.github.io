@@ -96,6 +96,19 @@ body::before {
     transform: translateX(-50%) rotate(-45deg);
     box-shadow: 38px -39px #6eff3e;
 }
+#products_list {
+    display: flex;
+    flex-direction: column;
+}
+.products {
+    margin-bottom: 40px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+img {
+    width: 250px;
+    height: 250px;
+}
 @media (min-width: 1199.98px) {
         #body {
             width: 100vw;
