@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fruti-Homies Delivery</title>
+        <link rel="icon" href="Imagenes/manzana-32.png">
+        <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Freepik - Flaticon</a>
+        <meta name="viewport"
+                content="width=device-width,initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <style>
+            html {
+                font-size: 62.5%;
+            }
+            * {
+                font-family: 'Playfair Display', serif;
+                font-size: 17px;
+            }
+            #body {
+                background-color: #b5bbc7;
+            }
+            .container {
+                margin-left: 25%;
+                margin-right: 25%;
+                
+            }
+            h2 {
+                font-size: 30px;
+            }
+            .icon {
+                display: flex;
+            }
+            .nav-link {
+                text-decoration: none;
+                font-size: 2rem;
+                color: #F8FAFC;
+            }
+            .nav-link:hover {
+                background: rgb(181, 187, 199);
+                padding: 4px;
+                border: 1px solid;
+            }
+            ul {
+                list-style: none;
+            }
+            #email-submit {
+                color: #F8FAFC;
+                background-color: #111827;
+                border-style: solid;
+                border-color: #000;
+                border-width: 2px;
+                border-radius: 5px;
+                margin-left: 33%;
+                margin-right: 33%;
+                margin-bottom: 80px;
+                margin-top: 8em;
+                padding: 18px 0 18px 0;
+                text-align: center;
+            }
+            #submit {
+                color: #F8FAFC;
+                background-color: #F97316;
+                border: 1px solid #000;
+                padding: 3px;
+            }
+            #submit:hover {
+                background-color:darkseagreen;
+                color: #F8FAFC;
+            }
+            #div-logo {
+                display: flex;
+            }
+            #img-header {
+                width: 15%;
+                display: flex;
+                flex-direction: row;
+                padding-left: 3%;
+            }
+            #logo-name {
+                display: flex;
+                padding-left: 3%;
+                align-items: center;
+                font-size: 3rem;
+            }
+            #header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                min-height: 80px;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                color: #F8FAFC;
+                background-color: #111827;
+                border-bottom: 4px solid #000;
+                justify-content: space-around;
+                align-items: center;
+            }
+            nav > ul {
+                width: 35vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .img-feature {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+            .beneficios {
+                color: #F8FAFC;
+                background-color: #111827;
+                border: 5px solid #111827;
+                display: flex;
+                width: 100%;
+                height: auto;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                padding: 4%;
+            }
+            .icon {
+                height: 125px;
+                display: flex;
+                width: 20%;
+            
+                margin-right: 20px;
+            }
+            
+            .features-description {
+                width: 70%;
+                height: auto;
+                display: block;
+            }
+            #video-div {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            #prices {
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 20px;
+               
+            }
+            .levels {
+                color: #F8FAFC;
+                background-color: #626364;
+                border-color: #000;
+                border-style: solid;
+                border-width: 1px;
+                text-align: center;
+                width: 250px;
+                padding-bottom: 12px;
+            }
+            ol {
+                list-style: none;
+                padding-left: 0;
+            }
+            #valve {
+                margin-left: 30px;
+            }
+            #bass {
+                margin-left: 21px;
+            }
+            #footer-prices {
+                margin-left: 15%;
+                margin-right: 15%;
+                padding-bottom: 40px;
+            }
+            .sub-titles {
+                color: #F8FAFC;
+                background-color: #111827;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            .boton {
+                background-color: #F97316;
+            }
+            .boton:hover {
+                background-color:chartreuse;
+                color: white;
+            }
+            @media only screen and (max-device-width : 640px) {
+                * {
+                    font-size: 0.75rem;
+                }
+                #body {
+                    width: 100vw;
+                }
+                .container {
+                    width: 97vw;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }
+                h2 {
+                    font-size: 2rem !important;
+                }
+                #header {
+                    width: 97vw;
+                }
+                #img-header {
+                    width: 27%;
+                }
+                #div-logo {
+                    align-items: center;
+                }
+                #logo-name {
+                    font-size: 1.7rem;
+                }
+                nav > ul {
+                    width: auto;
+                    flex-direction: column;
+                }
+                #footer-prices {
+                    margin-left: 15%;
+                    margin-right: 15%;
+                }
+                #email-submit {
+                    margin-top: 150px;
+                }
+                .levels {
+                    width: 20vw;
+                }
+                .beneficios {
+                    height: auto;
+                }
+                .features-description {
+                    height: auto;
+                }
+                .icon {
+                    height: auto;
+                }
+                #video-div {
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                }
+                #handcrafted {
+                    font-size: 70%;
+                }
+                #email-submit {
+                    margin-right: 20%;
+                    margin-left: 20%;
+                }
+                #prices {
+                    display: flex;
+                }
+            }
+        </style>
+    </head>
+    <body id="body">
+        <header id="header">
+            <div id="div-logo">
+                <img src="Imagenes/manzana.png" id="img-header" alt="company-logo">
+                <p id="logo-name">Fruti-Homies</p>
+            </div>
+            <nav id="nav-bar">
+                    <ul>
+                    <li><a id="nav-features" href="#features" class="nav-link">Features</a></li>
+                    <li><a id="nav-how" href="#video" class="nav-link">How It Works</a></li>
+                    <li><a id="nav-pricing" href="#prices" class="nav-link">Pricing</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <div id="body-page">
+            <div id="email-submit">
+                <form action=": https://www.reecodecamp.com/email-submit).">
+                    <p id="handcrafted">
+                        Get the best deals and news on our products from the comfort of your home
+                    </p>
+                    <input type="email" id="email" placeholder="Enter your email adress" required>
+                    <button type="submit" id="submit">GET STARTED</button>
+                </form>
+            </div>
+        <div class="container">
+            <section id="features">
+                <div class="beneficios">
+                    <div class="icon" id="div-premium">
+                        <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c16d.png" class="img-feature">
+                    </div>
+                    <div class="features-description">
+                        <h2>
+                            Quality control and health
+                        </h2>
+                        <p>
+                            Our fruits are carefully cultivated so that they cannot harm our consumers.
+                        </p>
+                    </div>
+                </div>
+                <div class="beneficios">
+                    <div class="icon">
+                        <img src="https://pngimg.com/uploads/apple/apple_PNG12444.png" class="img-feature">
+                    </div>
+                    <div class="features-description">
+                        <h2>
+                            Great diversity
+                        </h2>
+                        <p>
+                            In our gardens we have a wide variety of fruits, vegetables and tubers rich in proteins and vitamins.    
+                        </p>
+                    </div>
+                </div>
+                <div class="beneficios">
+                    <div class="icon">
+                        <img src="https://imagenpng.com/wp-content/uploads/2015/03/Ing-Pina.png" class="img-feature">
+                    </div>
+                    <div class="features-description">
+                        <h2>
+                            Growing demand
+                        </h2>
+                        <p>
+                            Our industry is constantly growing in the market that is why we will always have great offers and discounts on varieties of products   
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div id="video-div">
+                <iframe width="560" id="video" height="315" src="https://www.youtube.com/embed/YgZgmqItFxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="footer-prices"> 
+            <div id="prices">
+                <div class="levels" id="tenor">
+                    <div class="sub-titles">Tenor tombone</div>
+                    <h2>$600</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="boton">SELECT</button>
+                </div>
+                <div class="levels" id="bass">
+                    <div class="sub-titles">Bass trombone</div>
+                    <h2>$900</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="boton">SELECT</button>
+                </div>
+                <div class="levels" id="valve">
+                    <div class="sub-titles">Valve trombone</div>
+                    <h2>$1200</h2>
+                    <ol>
+                        <li>Plays similar to a trumpet</li>
+                        <li>Great por Jazz Bands</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>lorem ipsum.</li>
+                    </ol>
+                    <button class="boton">SELECT</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
